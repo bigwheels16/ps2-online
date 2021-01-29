@@ -1,6 +1,6 @@
 # ps2-online
 
-A Clojure library designed to ... well, that part is up to you.
+How to lookup outfit ID by outfit alias: http://census.daybreakgames.com/get/ps2:v2/outfit?alias_lower=saca
 
 ## Usage
 

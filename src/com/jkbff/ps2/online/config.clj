@@ -11,7 +11,7 @@
 
 (defn get-env-bool
 	[name]
-	(case (.toLowerCase (get-env-string "IS_DEV"))
+	(case (.toLowerCase (get-env-string name))
 		"0" false
 		"false" false
 		"1" true
