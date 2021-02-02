@@ -25,4 +25,4 @@
     (let [outfit-members (flatten (map #(api/get-outfit-members %) (config/SUBSCRIBE_OUTFITS)))
           online-members (filter #(= "1" (:online-status %)) outfit-members)
           formatted-members (map format-member online-members)]
-        {:body {:online-members formatted-members}}))
+        {:body {:online-members (group-by :outfit formatted-members)}}))
